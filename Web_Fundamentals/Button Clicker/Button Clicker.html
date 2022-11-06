@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dojonary</title>
+</head>
+
+<body>
+    <div class="nav">
+        <h1>Dojanary</h1>
+        <input type="text" name="search" id="search" placeholder="  Search...">
+        <button onclick="changeText(this)" id="log-btn" type="button">Log in</button>
+    </div>
+    <div class="container">
+        <div class="box-container">
+            <div class="box-1">
+                <div class="ib-1">
+                    <h2>ninja</h2>
+                    <p class="no">noun</p>
+                    <p>Plural:<span>ninjas</span></p>
+                    <button onclick="likes()" class="likes" type="submit">13 likes</button>
+                </div>
+                <div>
+                    <p id="par-1">A practitioner skilled in the <br>
+                        <span><a href="#">Japanese</a></span> art of 
+                        <span><a href="#">ninjutsu</a></span> 
+                    </p>
+                </div>
+            </div>
+            <div class="box-2">
+                <div class="ib-1">
+                    <h2>ninja</h2>
+                    <p class="no">noun</p>
+                    <p>Plural:<span>ninjas</span></p>
+                    <button onclick="likes()" class="likes" type="submit">37 likes</button>
+                </div>
+                <div>
+                    <p id="par-2">A <span><a href="#">programer</a></span> who breaks <br>
+                        downn problems with <span><a href="#">zen</a></span>-like focus
+                    </p>
+                        
+                </div>
+            </div>
+        </div>
+        <div class="box-container-2">
+            <div class="box-3">
+                <h4>Dojanary is <br>
+                    difined by<span class="yo"> you </span>
+                </h4>
+                <button onclick="hide(this)" type="submit" id="define">Add Definetion</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

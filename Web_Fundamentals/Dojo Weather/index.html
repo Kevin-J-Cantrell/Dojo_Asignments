@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather Forcast</title>
+</head>
+
+<body>
+    <div class="top">
+        <div>
+            <h1 class="top-left">DojoWeather</h1>
+        </div>
+        <div class="top-right">
+            <a onclick="msg(this)" href="#">Burbank</a>
+            <a onclick="msg(this)" href="#">Chicago</a>
+            <a onclick="msg(this)" href="#">Dallas</a>
+        </div>
+    </div>
+    <div class="body">
+        <div class="top-body">
+            <h2>San Jose</h2>
+            <label for="tp" id=Temp>Show temperture in</label>
+            <select name="tp" onchange="temperture(this)" id="tp">
+                <option value="C">°C</option>
+                <option value="F">°F</option>
+            </select>
+        </div>
+        <div class="inner-body">
+            <div class="Today">
+                <p class="day">Today</p>
+                    <img class="round" src="./img/some_rain.png" height="200px" alt="some_rain">
+                <p class="text">Some Rain</p>
+                    <p class="tempertures"> 
+                        <span class="low" id="temp1">24</span>
+                        <span class="high" id="temp2">18</span>
+                    </p>
+            </div>
+            <div class="Tomorrow">
+                <p class="day">Tomorrow</p>
+                    <img class="round" src="./img/some_sun.png" height="200px" alt="some_sun">
+                <p class="text">Some Sun</p>
+                <p class="tempertures"> 
+                    <span class="low" id="temp3">27</span>
+                    <span class="high" id="temp4">19</span>
+                </p>
+            </div>
+            <div class="Friday">
+                <p class="day">Friday</p>
+                    <img class="round" src="./img/some_clouds.png" height="200px" alt="some_clouds">
+                <p class="text">Some Clouds</p>
+                <p class="tempertures"> 
+                    <span class="low" id="temp5">21</span>
+                    <span class="high" id="temp6">16</span>
+                </p>
+                </p>
+            </div>
+            <div class="Saturday">
+                <p class="day">Saturday</p>
+                <img class="round" src="./img/some_sun.png" height="200px" alt="some_sun">
+                <p class="text">Some Sun</p>
+                <p class="tempertures"> 
+                    <span class="low" id="temp7">26</span>
+                    <span class="high" id="temp8">21</span>
+                </p>
+            </div>
+        </div>
+        <div class="bot-body">
+            <img src="./img/cookie.png" id="cookie" height="150" alt="cookie">
+            <div class="col">
+                <p id="bold">Stop! Cookie time</p>
+                <p class="text1">
+                    We use cookies (sadly not the edible ones) to personalize<br>
+                    content and ads,to provide social features and to <br>
+                    analyse are traffic. <a href="#">Read more</a>
+                </p>
+            </div>
+            <button onclick="Accept('.bot-body')">I Accept</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

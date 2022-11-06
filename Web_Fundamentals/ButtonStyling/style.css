@@ -1,0 +1,33 @@
+*{
+  margin: 12px;
+  padding: 0px
+  
+}
+#search {
+  padding: 10px 50px;  
+  font-weight: bold;
+  font-size: 20px;
+  border: solid 1px rgb(12, 207, 54);
+  border-radius: 70px ;
+  
+  
+}
+#Pluss{
+  background-color: rgb(12, 200, 66);
+  color: white;           
+  padding: 20px;  
+  font-weight: bold;
+  font-size: 20px;
+  border: solid 1px rgb(12, 207, 54);
+  border-radius: 100% 
+  
+}
+#Create_Acount{
+  padding: 10px 50px;  
+  font-weight: bold;
+  font-size: 20px;
+  border: solid 1px rgb(0, 0, 0);
+  box-shadow: rgb(0, 7, 2) 10px 10px 10px;
+  background-color: rgb(24, 107, 190);
+  color: whitesmoke;
+}

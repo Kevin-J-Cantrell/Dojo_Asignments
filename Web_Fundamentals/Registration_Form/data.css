@@ -1,0 +1,19 @@
+* {  
+  font-weight: bold;
+  font-size: 20px
+  
+  
+  
+}
+body {
+  background-color: #0fff
+}
+input {
+
+  border: 2px solid rgb(9, 8, 8);
+  border-radius: 6px;
+}
+h1 {
+  font-style: italic;
+  font-size: 45px;
+}

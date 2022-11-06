@@ -1,0 +1,38 @@
+*{
+  
+  text-align: center;
+ 
+  
+}
+
+h1{  
+  font-size: 3.5em
+}
+.conainer{
+  background-color:  rgb(223, 222, 222);
+  width: 900px;  
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  
+}
+.row.blue{
+  background-color:#5bc7da ;
+  
+}
+.row.pink{ 
+  background-color:#d5a2aa;  
+  justify-content: space-around;   
+}
+.row{ 
+  background-color:beige; 
+  margin: 20px;
+  padding: 20px; 
+  display: flex;
+  justify-content:space-between ;
+}
+
+
+.Octocat {
+height: 200px;;
+}

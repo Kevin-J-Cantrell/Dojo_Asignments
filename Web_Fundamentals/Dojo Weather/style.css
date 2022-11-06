@@ -1,0 +1,118 @@
+* {
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+}
+
+.top {
+    height: 80px;
+    width: 1920px;
+    background-color: #9fc5f8; 
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.top-left {
+    
+    font-size: 50px;
+    margin-left: 50px;
+}
+.top-right  {
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 40px;
+}
+.top-right > a  {
+    text-decoration: none; 
+    color: #ffff;
+}
+.top-body {
+    display: flex;
+    justify-content: space-between;
+}
+h2 {
+    padding: 15px 0px;
+}
+
+.body {
+    width: 1200px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 335px;
+}
+.inner-body {
+    border-top-style:solid;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.round {
+    padding: 20px;
+    border-radius: 50%;
+}
+.Today,.Tomorrow,.Friday,.Saturday{
+    background-color:#eeeeee ;
+    height: 400px;
+    padding: 20px;
+    margin-top: 20px;
+    
+}
+#Temp {
+    display: flex;
+    align-self: center;
+    margin-left: 920px;
+}
+#tp {
+    display: flex;
+    align-self: center;
+}
+.day {
+    font-size: 40px;
+    text-align: center;
+}
+.bot-body {
+    position:fixed;
+    border-style:solid;
+    background-color: #eeeeee;
+    width: 1195px;
+    height: 250px;
+    margin-top: 530px;
+    display: flex;
+    align-items: center;
+}
+.text {
+    text-align: center;
+}
+
+#bold {
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0px 0px;
+}
+button{
+    background-color: #9fc5f8;
+    font-style: normal;
+    padding: 5px;
+    box-shadow: 3px 3px;
+    margin-left: 120px;
+}
+#cookie {
+    margin: 100px;
+}
+.tempertures {
+    display: flex;
+    justify-content:center;
+    padding: 40px;
+}
+.low {
+    color: red;
+}
+.high {
+    color: blue;
+    padding-left: 80px;  
+}
+.high::after, .low::after {
+    content: "°";

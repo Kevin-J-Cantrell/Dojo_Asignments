@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;    
+}
+
+body {
+    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+
+}
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: -370px -265px;
+    
+    
+
+    
+}
+
+.border,.border-2,.border-3 {
+    border: solid 1px black;
+    width: 400px;
+    height: 100px;   
+    margin: 20px;
+}
+.border-2 {
+    border: solid 1px black;
+    width: 400px;
+    height: 100px;   
+}
+.border-3 {
+    border: solid 1px black;
+    width: 400px;
+    height: 100px;   
+}
+
+
+
+h2 {
+   padding: 12px 0px 0px 20px;
+}
+
+button {
+    background-color: hsla(217, 87%, 47%, 0.898);
+    height: 30px;
+    width: 50px;
+    margin-left: 20px;
+    box-shadow: 3px 3px;
+    float: right;
+    margin-right:8%;
+    
+}
+.pro-body {
+    border: solid 1px #000;
+    height: 300px;
+    width: 200px;
+    margin: 50px 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.top {
+    background-color: rgb(48, 28, 32);
+    height: 60px;
+    width: 80%;
+    margin-left: 200px;
+}
+#title {
+    color: aliceblue;
+    padding:  10px -10px ;    
+}
+#box1,#box2,#box3 {
+    margin: 10px 20px;
+}
+h1 {
+    align-self: center;
+    margin: 10px;
+}
+span{
+    margin-left: 30px;
+}
+#img-tag{
+   
+}

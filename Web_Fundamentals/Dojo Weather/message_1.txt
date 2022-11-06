@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    p {
+        display: inline-block;
+    }
+</style>
+<body>
+    
+    <div id="Day1">
+        <button onclick="day()">Change Temp</button>
+        <p id="caption">F</p>
+        <h1>Monday</h1>
+        <h2>Temp <p class="red" style="color: red;">28</p> <p>°</p> <p class="blue" style="color: blue;">45</p> <p>°</p> </h2>
+    </div>
+    <div id="Day2">
+        <h1>Tuesday</h1>
+        <h2>Temp <p class="red" style="color: red;">35</p> <p>°</p> <p class="blue"  style="color: blue;">59</p> <p>°</p> </h2>
+    </div>
+    <div id="Day3">
+        <h1>Wednesday</h1>
+        <h2>Temp <p class="red" style="color: red;">40</p> <p>°</p> <p class="blue"  style="color: blue;">75</p> <p>°</p> </h2>
+    </div>
+</body>
+<script>
+
+        var all_original_reds = document.querySelectorAll('.red')
+        var all_original_blues = document.querySelectorAll('.blue')
+        var red_array = []
+        var blue_array = []
+        for(var i=0; i < all_original_reds.length; i++){
+                red_array.push(all_original_reds[i].innerHTML)
+                blue_array.push(all_original_blues[i].innerHTML)
+            }
+        console.log(red_array)
+        console.log(blue_array)
+
+        function day(){
+            if (document.getElementById('caption').innerHTML == 'F'){
+            for(var i=0; i < all_original_reds.length; i++){
+                var the_temp_red = all_original_reds[i].innerHTML
+                var the_temp_blue = all_original_blues[i].innerHTML
+                var red_converted = Math.round((the_temp_red - 32) * 0.5556)
+                var blue_converted  = Math.round((the_temp_blue - 32) * 0.5556)
+                all_original_reds[i].innerHTML = red_converted
+                all_original_blues[i].innerHTML = blue_converted
+            }
+            document.getElementById('caption').innerHTML = 'C'
+             }
+             else{
+                for(var i=0; i < red_array.length; i++){
+                all_original_reds[i].innerHTML = red_array[i]
+                all_original_blues[i].innerHTML = blue_array[i]
+            }
+            document.getElementById('caption').innerHTML = 'F'
+             }
+        
+        }
+
+
+
+
+
+    //     function day(){
+    //     var current_caption = caption
+        
+    //     if (document.getElementById('caption').innerHTML == 'F'){
+    //     console.log("hey I am in fah getting ready to be converted to C")
+    //     var convertedred1 = Math.round((red1 - 32) * 0.5556)
+    //     var convertedblue1 = Math.round((blue1 - 32) * 0.5556)
+    //     document.getElementById('red1').innerHTML = convertedred1
+    //     document.getElementById('blue1').innerHTML = convertedblue1
+    //     document.getElementById('caption').innerHTML = 'C'
+    //     }
+    //     else {
+    //     console.log("this needs to work!")
+    //     document.getElementById('red1').innerHTML = red1
+    //     document.getElementById('blue1').innerHTML = blue1   
+    //     document.getElementById('caption').innerHTML = 'F'
+    //  }
+    // }
+
+</script>
+</html>
