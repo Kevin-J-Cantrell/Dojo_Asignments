@@ -1,0 +1,25 @@
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+  }
+.nav {
+  height: 65px;
+  width: 550px;
+  background-color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  }
+.nav-links {
+  margin-top: 10px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  }
+  .btn{
+  background-color: aquamarine;
+  }
+  .nav-links a {
+    margin-right: 10px;
+  }

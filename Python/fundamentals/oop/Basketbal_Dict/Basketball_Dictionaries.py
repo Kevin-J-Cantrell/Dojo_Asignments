@@ -78,8 +78,8 @@ print(new_team)
 
 
 #Challenge 2: Create instances using individual player dictionaries.
-player_kevin = Player(kevin)
-print(player_kevin) 
+# player_kevin = Player(kevin)
+# print(player_kevin) 
 # player_jason = Player(jason)
 # player_kyrie = Player(kyrie)
 # print(f"Player: {player_kevin.name}\nAge: {player_kevin.age}\nPosition: {player_kevin.position}\nTeam: {player_kevin.team}")
