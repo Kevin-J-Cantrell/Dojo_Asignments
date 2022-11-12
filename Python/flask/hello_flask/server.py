@@ -17,5 +17,5 @@ def can(anything,num):
     return f'Hello {anything * num}!'
     # Return the string 'Hello World!' as a response
 if __name__=="__main__":   # Ensure this file is being run directly and not from a different module    
-    app.run(debug=True,port=5000)    # Run the app in debug mode.
+    app.run(debug=True,port=8000)    # Run the app in debug mode.
 
