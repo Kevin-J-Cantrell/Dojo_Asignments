@@ -22,7 +22,7 @@ class MySQLConnection:
                 print("Running Query:", query)
 
                 cursor.execute(query, data)
-                if query.lower().find("insert") >= 0:
+                if query.lower().find("hie") >= 0:
 # INSERT queries will return the ID NUMBER of the row inserted
                     self.connection.commit()
                     return cursor.lastrowid
