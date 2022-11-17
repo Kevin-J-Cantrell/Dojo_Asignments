@@ -13,23 +13,25 @@
 
 <body>
 <h1 style="align-self: center;">Counter</h1>
-<p style="align-self: center;"><span>{{session["count"]}}</span></p>
+<h3 style="align-self: center;"><span>{{session["count"]}}</span></h3>
 <div style="margin: 0 auto;">
     <form action="/count"method="post">
         
-        <a class="btn btn-info" href=""></a>
-        <a class="btn btn-danger" href=""></a>
+        <a class="btn btn-info" href="/">Visit 2 Times</a>
+        <a class="btn btn-danger" href="/destroy_session">Reset</a>
+        <input style="width:40px;" name="count" value="0" type="number" id="count">
+        <button type="submit" id="count">submit</button>
         
     </form>
     
     
 <!-- <a href="/" style="text-decoration: none; margin:0px 5px; width: 100px; border:2px black solid; background-color:rgb(0, 225, 255); padding:3px 5px; color:black; border-radius:5px" >Add 2 Visits</a> -->
 <!-- <a href="/clear" style="text-decoration: none; margin:-34px 8px; width: 100px; border:2px rgb(0, 0, 0) solid; background-color:rgb(226, 119, 19); padding:3px 5px; color:black; border-radius:5px" >Reset Page</a> -->
-<input style="width:40px;" name="count" value="{{session['count']}}" type="number">
-<button type="submit"></button>
+
+
 </div>
 
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script src="{{url_for('static', filename='script.js')}}"></script>
     <!--< change quatations on the end. -->
     
 </body>
