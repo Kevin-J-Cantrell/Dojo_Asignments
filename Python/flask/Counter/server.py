@@ -5,7 +5,7 @@ app.secret_key = 'keep it secret, keep it safe' # set a secret key for security 
 @app.route('/')
 def index():
     if 'count'not in session:
-        session["count"]=1    
+        session["count"]=0    
     elif 'count' in session:
         session["count"] = int(session['count']) + 2
     else: 
@@ -22,11 +22,11 @@ def count():
         count.append(request.form)
         session["count"] = count
     else:
-        session["count"] += int(request.form["count"]) -2
+        session["count"] += int(request.form["blob"]) -2
     return redirect('/')
 @app.route('/destroy_session')
 def destroy_session():
     session.clear()
     return redirect('/')
 if __name__ == '__main__':
-    app.run(debug=True, port=8000)
+    app.run(debug=True, port=8020)
